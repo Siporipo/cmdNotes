@@ -1,0 +1,24 @@
+Usage: notes <command> [<args>]
+
+--help	outputs all available commands provided by the cmdNotes project
+
+File handling:
+	new	Creates new file, does not automatically open it.
+	
+	delete	Deletes files specified in [<args>]
+		Tries to delete the open file if no argument is provided.
+
+	open	Opens one file if the path is valid and accessible.
+	opened	Outputs selected/opened file path.
+
+File content management:
+	list	Lists selected file contents in a numbered list fashion.
+		Outputs NO LINES IN BUFFER if a valid, empty file is selected.
+	
+	add	Writes n arguments, each in a new line.
+	remove	Removes n arguments by hash listed by `list`.
+	clear	Wipes the selected file.
+
+If something appears to not be functional, feel free to open a new issue in the github page:
+	https://github.com/siporipo/cmdNotes/issues
+
